@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio-Data</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #eef1f5;
+      color: #374151;
+      line-height: 1.5;
+      padding: 20px 14px;
+    }
+
+    .page-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #f8f9fb;
+      border: 1px solid #e2e6ec;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 14px;
+    }
+
+    .personal-body {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .photo-frame {
+      width: 72px;
+      height: 72px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      overflow: hidden;
+      flex-shrink: 0;
+      background-color: #ffffff;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .info-table td {
+      padding: 4px 8px;
+      font-size: 13px;
+      vertical-align: top;
+    }
+
+    .info-table td.label {
+      width: 145px;
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .info-table td.value {
+      color: #6b7280;
+    }
+
+    .bullet-list {
+      list-style-type: disc;
+      padding-left: 26px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+
+    .bullet-list li {
+      margin-bottom: 4px;
+    }
+
+    .objective-text {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 540px) {
+      .personal-body {
+        flex-direction: column;
+      }
+
+      .info-table td.label {
+        width: 115px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <section class="card">
+      <h2 class="card-title">Personal Information</h2>
+      <div class="personal-body">
+        <div class="photo-frame">
+          <img src="shong.jfif" alt="Profile Photo" />
+        </div>
+        <table class="info-table">
+          <tr>
+            <td class="label">Full Name</td>
+            <td class="value">Dela Cruz, Jay-ar B.</td>
+          </tr>
+          <tr>
+            <td class="label">Date of Birth</td>
+            <td class="value">January 21, 2006</td>
+          </tr>
+          <tr>
+            <td class="label">Age</td>
+            <td class="value">20</td>
+          </tr>
+          <tr>
+            <td class="label">Sex</td>
+            <td class="value">Male</td>
+          </tr>
+          <tr>
+            <td class="label">Civil Status</td>
+            <td class="value">Single</td>
+          </tr>
+          <tr>
+            <td class="label">Citizenship</td>
+            <td class="value">Filipino</td>
+          </tr>
+          <tr>
+            <td class="label">Address</td>
+            <td class="value">Surgui 1st Camiling, Tarlac</td>
+          </tr>
+          <tr>
+            <td class="label">Email</td>
+            <td class="value">jayarbondocdelacruz@gmail.com</td>
+          </tr>
+          <tr>
+            <td class="label">Contact No.</td>
+            <td class="value">09636808442</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Educational Background</h2>
+      <table class="info-table">
+        <tr>
+          <td class="label">Tertiary</td>
+          <td class="value">Bachelor of Science in Information Technology (2025 - Present)</td>
+        </tr>
+	<tr>
+          <td class="label">Vocational Course</td>
+          <td class="value">Career Entry Course Software Developers - RPG (2024 - 2025 )</td>
+        </tr>
+        <tr>
+          <td class="label">Secondary</td>
+          <td class="value">Malacampa National High School(2018 - 2024)</td>
+        </tr>
+        <tr>
+          <td class="label">Elementary</td>
+          <td class="value">Surgui 2nd Elementary School(2013 - 2018)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Skills</h2>
+      <ul class="bullet-list">
+        <li>Basic HTML and CSS</li>
+        <li>Basic Game 2d Maker</li>
+        <li>Basic Wi-Fi Configuration</li>
+        <li>Microsoft Office</li>
+        <li>Computer Troubleshooting</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Hobbies and Interests</h2>
+      <ul class="bullet-list">
+        <li>Playing Online Games</li>
+        <li>Learning programming</li>
+        <li>Listening to music</li>
+        <li>Watching Ai Short Dramas</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Career Objective</h2>
+      <p class="objective-text">
+        To gain practical experience and grow my technical skills in a dynamic environment while contributing dependable work, eagerness to learn, and strong dedication.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
